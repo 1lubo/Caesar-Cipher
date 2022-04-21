@@ -22,7 +22,7 @@ def caesar_cipher (string, shift)
 end
 
 def shift_index(index, shift)
-    if index > 0  
+    if index >= 0  
         if index + shift < 25
             return index + shift
         else
@@ -37,7 +37,3 @@ def shift_index(index, shift)
     end
 
 end
-
-
-caesar_cipher("What a cipher!", 5)
-caesar_cipher("What a cipher!", -5)
